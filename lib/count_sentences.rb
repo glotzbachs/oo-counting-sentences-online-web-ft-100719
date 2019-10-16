@@ -15,6 +15,7 @@ class String
   end
 
   def count_sentences
-    self.split(".").length
+    punctuation=[".","?","!"]
+    self.split(punctuation).length
   end
 end
